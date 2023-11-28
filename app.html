@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Win Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="container">
+    <h1>IPL Win Predictor</h1>
+    <div class="form-group">
+    <label for="battingTeam">Batting Team:</label>
+    <select id="battingTeam" name="battingTeam">
+        <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+        <option value="Mumbai Indians">Mumbai Indians</option>
+        <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+        <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+        <option value="Kings XI Punjab">Kings XI Punjab</option>
+        <option value="Chennai Super Kings">Chennai Super Kings</option>
+        <option value="Rajasthan Royals">Rajasthan Royals</option>
+        <option value="Delhi Capitals">Delhi Capitals</option>
+        <br>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="bowlingTeam">Bowling Team:</label>
+    <select id="bowlingTeam" name="bowlingTeam">
+        <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+        <option value="Mumbai Indians">Mumbai Indians</option>
+        <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+        <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+        <option value="Kings XI Punjab">Kings XI Punjab</option>
+        <option value="Chennai Super Kings">Chennai Super Kings</option>
+        <option value="Rajasthan Royals">Rajasthan Royals</option>
+        <option value="Delhi Capitals">Delhi Capitals</option>
+   
+    </select>
+    <br>
+</div>
+
+<div class="form-group">
+    <label for="venue">Venue:</label>
+    <select id="venue" name="venue">
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Indore">Indore</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Cape Town">Cape Town</option>
+        <option value="Port Elizabeth">Port Elizabeth</option>
+        <option value="Durban">Durban</option>
+        <option value="Centurion">Centurion</option>
+        <option value="East London">East London</option>
+        <option value="Johannesburg">Johannesburg</option>
+        <option value="Kimberley">Kimberley</option>
+        <option value="Bloemfontein">Bloemfontein</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Cuttack">Cuttack</option>
+        <option value="Nagpur">Nagpur</option>
+        <option value="Dharamsala">Dharamsala</option>
+        <option value="Visakhapatnam">Visakhapatnam</option>
+        <option value="Pune">Pune</option>
+        <option value="Raipur">Raipur</option>
+        <option value="Ranchi">Ranchi</option>
+        <option value="Abu Dhabi">Abu Dhabi</option>
+        <option value="Sharjah">Sharjah</option>
+        <option value="Mohali">Mohali</option>
+        <option value="Bengaluru">Bengaluru</option>
+       
+    </select>
+</div>
+    <br>
+
+    <label for="target">Target:</label>
+    <input type="number" id="target" step="1">
+
+    <label for="score">Score:</label>
+    <input type="number" id="score" step="1">
+
+    <label for="overs">Overs Completed:</label>
+    <input type="number" id="overs" step="1">
+
+    <label for="wickets">Wickets Fallen:</label>
+    <input type="number" id="wickets" step="1">
+
+    <button onclick="predictOutcome()">Predict Outcome</button>
+</div>
+
+<!-- Add this modal structure to your HTML -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalOutput"></h2>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</div>
+<div id="resultContainer">
+    <h2 id="output"></h2>
+</div>
+</body>
+</html>
