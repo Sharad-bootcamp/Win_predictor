@@ -14,9 +14,6 @@ try:
 except FileNotFoundError:
     st.error(f"File not found: {model_path}. Make sure the file exists at the specified path.")
 
-# ... rest of your code remains unchanged
-
-
 # Declaring the teams
 teams = ['Sunrisers Hyderabad', 'Mumbai Indians', 'Royal Challengers Bangalore', 'Kolkata Knight Riders',
          'Kings XI Punjab', 'Chennai Super Kings', 'Rajasthan Royals', 'Delhi Capitals']
