@@ -80,7 +80,7 @@ elif batting_team == bowling_team:
 
 else:
     # Checking if the input values are valid or not
-    if 0 <= target <= 300 and 0 <= overs <= 20 and 0 <= wickets <= 10 and 0 <= score:
+    if 0 <= target <= 400 and 0 <= overs <= 20 and 0 <= wickets <= 10 and 0 <= score:
 
         try:
             if st.button('Predict Probability'):
